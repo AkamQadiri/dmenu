@@ -1,0 +1,5 @@
+dmenu-xresources-4.9.diff
+dmenu-center-20200111-8cd37e1.diff
+dmenu-grid-4.9.diff
+dmenu-gridnav-5.0.diff
+dmenu-border-4.9.diff
