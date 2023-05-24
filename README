@@ -1,24 +1,29 @@
-dmenu - dynamic menu
-====================
-dmenu is an efficient dynamic menu for X.
+# Personalized Dmenu Fork
 
+This repository contains a personalized fork of Dmenu, a dynamic menu for X, with patches applied to enhance its functionality and appearance.
 
-Requirements
-------------
-In order to build dmenu you need the Xlib header files.
+Feel free to explore and adapt this customized Dmenu fork to suit your own preferences and requirements.
 
+## Screenshot
 
-Installation
-------------
-Edit config.mk to match your local setup (dmenu is installed into
-the /usr/local namespace by default).
+![dmenu](./screenshot.png)
 
-Afterwards enter the following command to build and install dmenu
-(if necessary as root):
+## Applied Patches
 
-    make clean install
+- `xresources`: Enables reading color settings from the X resources database (xrdb).
+- `center`: Centers the dmenu window on the screen.
+- `grid`: Implements a grid layout for displaying menu options.
+- `gridnav`: Adds navigation support for selecting menu options using arrow keys in the grid layout.
+- `border`: Adds a border around the dmenu window.
 
+## Installation
 
-Running dmenu
--------------
-See the man page for details.
+1. Clone the repository to your local machine.
+   ```shell
+   git clone https://github.com/AkamQadiri/dmenu
+   ```
+
+2. Compile and install Dmenu by running the following command within the cloned repository:
+   ```shell
+   sudo make clean install
+   ```
